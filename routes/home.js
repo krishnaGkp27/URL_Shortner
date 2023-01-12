@@ -3,7 +3,7 @@ const router = express.Router();
 const path = require("path");
 
 router.get("/", async (req,res) => {
-    const htmlPath = path.join(__dirname,"../public", "index1.html");
+    const htmlPath = path.join(__dirname,"../public", "index.html");
     res.sendFile(htmlPath);
 })
 

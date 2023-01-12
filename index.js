@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 //routes
-//app.use("/urlapi", shortUrl)
+app.use("/urlapi", shortUrl)
 app.use("/", homeUrl)
 
 app.listen(PORT, () => {

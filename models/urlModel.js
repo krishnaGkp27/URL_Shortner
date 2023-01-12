@@ -1,4 +1,4 @@
-const createDB = require("./config/db");
+const sequelize = require("../config/db");
 const { DataTypes, Model } = require("sequelize");
 
 //creating a schema
@@ -18,7 +18,7 @@ Url.init(
         }
     },
     {
-        createDB, modelName: "Url"
+        sequelize, modelName: "Url"
     }
 );
 

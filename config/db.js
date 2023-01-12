@@ -1,8 +1,8 @@
 const { Sequelize } = require("sequelize");
 
-const createDB = new Sequilize("UrlShortner", "user", "pass", {
+const createDB = new Sequelize("UrlShortner", "user", "pass", {
     dialect: "sqlite",
-    host: ".config/db.sqlite"
+    host: "./config/db.sqlite"
 })
 
 module.exports = createDB;
